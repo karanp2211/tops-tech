@@ -1,0 +1,190 @@
+Q1. What do you understand By Database?
+
+=>A database is an electronically stored, systematic collection of data.
+=>It can contain any type of data, including words, numbers, images, videos, and files.
+=>You can use software called a database management system (DBMS) to store, retrieve, and edit data.
+
+Q2. What is Normalization?
+
+=>normalization is a process used in database design to create well-structured
+  tables that minimize data redundancy and dependency.
+=>Normalization is the process of organizing the data in the database.
+=>Normalization is used to minimize the redundancy from a relation or set of relations.
+  It is also used to eliminate undesirable characteristics like Insertion, Update, and Deletion Anomalies.
+=>Normalization divides the larger table into smaller and links them using relationships.
+=>The normal form is used to reduce redundancy from the database table.
+
+1NF:    A relation is in 1NF if it contains an atomic value.
+2NF:	A relation will be in 2NF if it is in 1NF and all non-key attributes are fully functional dependent on the primary key.
+3NF:	A relation will be in 3NF if it is in 2NF and no transition dependency exists.
+BCNF:	A stronger definition of 3NF is known as Boyce Codd's normal form.
+
+Q3. What is Difference between DBMS and RDBMS?
+=>Storage Format:
+DBMS: Stores data as files.
+RDBMS: Stores data in tabular form (tables).
+
+Data Access:
+DBMS: Requires accessing data elements individually.
+RDBMS: Allows multiple data elements to be accessed simultaneously.
+
+Data Relationships:
+DBMS: No inherent relationship between data.
+RDBMS: Data is stored in related tables.
+
+Normalization:
+DBMS: Does not support normalization.
+RDBMS: Supports normalization to reduce redundancy and maintain integrity.
+
+Distributed Database:
+DBMS: Does not support distributed databases.
+RDBMS: Supports distributed databases.
+
+Data Structure:
+DBMS: Uses navigational or hierarchical structures.
+RDBMS: Utilizes tabular structures with columns and rows.
+
+Data Volume:
+DBMS: Deals with small quantities of data.
+RDBMS: Handles large amounts of data.
+
+Data Redundancy:
+DBMS: Common in this model.
+RDBMS: Keys and indexes prevent data redundancy.
+
+
+Q4. What is MF Cod Rule of RDBMS Systems?
+
+=>Information is represented logically in tables.
+=>Data must be logically accessible by table, primary key, and column. 
+=>Null values must be uniformly treated as “missing information,” not as empty strings, blanks, or zeros.
+
+Rule 1: The Information Rule:
+        All information, whether it is user information or metadata,
+        that is stored in a database must be entered as a value in a cell of a table.
+        It is said that everything within the database is organized in a table layout.
+
+Rule 2: The Guaranteed Access Rule:
+        Each data element is guaranteed to be accessible logically with a combination of the table name,
+        primary key (row value), and attribute name (column value). 
+
+Rule 3: Systematic Treatment of NULL Values:
+        Every Null value in a database must be given a systematic and uniform treatment.
+
+Rule 4: Active Online Catalog Rule:
+        The database catalog, which contains metadata about the database, must be stored and accessed using the same relational database management system.
+
+Rule 5: The Comprehensive Data Sublanguage Rule:
+        A crucial component of any efficient database system is its ability to offer an easily understandable data manipulation language (DML) that facilitates defining, querying, and modifying information within the database.
+
+Rule 6: The View Updating Rule:
+        All views that are theoretically updatable must also be updatable by the system.
+
+Rule 7: High-level Insert, Update, and Delete:
+        A successful database system must possess the feature of facilitating high-level insertions, updates, and deletions
+        that can grant users the ability to conduct these operations with ease through a single query.
+
+Rule 8: Physical Data Independence:
+        Application programs and activities should remain unaffected when changes are made to the physical storage structures or methods.
+
+Rule 9: Logical Data Independence :
+        Application programs and activities should remain unaffected when changes are made to the logical structure of the data, such as adding or modifying tables.
+
+Rule 10: Integrity Independence:
+         Integrity constraints should be specified separately from application programs and stored in the catalog. They should be automatically enforced by the database system.
+
+Rule 11: Distribution Independence:
+         The distribution of data across multiple locations should be invisible to users, and the database system should handle the distribution transparently.
+
+Rule 12: Non-Subversion Rule:
+         If the interface of the system is providing access to low-level records, then the interface must not be able to damage the system and bypass security and integrity constraints.                 
+
+Q5. What do you understand By Data Redundancy?
+
+=>Data redundancy occurs when the same piece of data exists in multiple places, whereas data inconsistency
+  is when the same data exists in different formats in multiple tables.
+
+  1. Insertion Anomaly:
+     Insertion anomaly arises when you are trying to insert some data into the database, but you are not able to insert it.
+
+  2. Deletion Anomaly:
+     Deletion anomaly arises when you delete some data from the database, but some unrelated data is also deleted;
+     that is, there will be a loss of data due to deletion anomaly.
+     
+  3. Updating Anomaly:
+     An update anomaly arises when you update some data in the database, but the data is partially updated,
+     which causes data inconsistency.      
+
+Q6. What is DDL Interpreter?
+
+=> It interprets the DDL (Data Definition Language) Instructions and stores the record in a data dictionary
+   Query Optimizer: It executes the DML Instructions and picks the lowest cost evaluation plan out of all the alternatives present.
+
+   1. CREATE : This command is used to create table in the relational database . 
+
+   2. ALTER : Alter command is used for altering the table in many forms like: 
+             => Add a column
+             => Rename existing column
+             => Drop a column
+             => Modify the size of the column or change datatype of the column
+
+Q7. What is DML Compiler in SQL?
+
+=>DML (Data Manipulation Language) is a type of SQL command used to manipulate data in a database.
+=>It inserts, updates, and deletes data from a database table.
+=>Examples of DML statements include INSERT, UPDATE, and DELETE.
+
+INSERT: Adds new or new values to the database.
+UPDATE: Changes or updates current or existing data to a more recent value within the database.
+DELETE: Deletes or deletes the values or data information of the current table in the database.
+SELECT: Gets data out of the database.
+
+Q8. What is SQL Key Constraints writing an Example of SQL Key Constraints?
+
+=>SQL key constraints are used to ensure data integrity and accuracy within a database.
+
+=>Different types of key constraints include:
+
+Primary Key:
+Uniquely identifies each record in a table, and cannot contain null values.
+A table can only have one primary key, which can be made up of one or more columns.
+
+Foreign Key:
+Establishes a relationship between two tables by linking a column in one table to the primary key in another.
+This ensures data consistency across both tables.
+
+Unique:
+Ensures that all values in a column are different.
+Any attempt to add a duplicate value will result in an error.
+
+Not Null:
+Prevents a column from having any null values.
+This forces a field to always have a value.
+
+Check:
+Allows users to specify a condition that needs to be met for successful data insertion into a table.
+For example, a voting list table might require voters to be above 18 years old.
+
+Default:
+Automatically inserts a specified default value into a column when no other value is provided. 
+
+
+Q9. What is save Point? How to create a save Point write a Query?
+
+=>A SAVEPOINT is a point in a transaction in which you can roll the transaction back to a certain
+  point without rolling back the entire transaction.
+=>Syntax for Savepoint command: SAVEPOINT SAVEPOINT_NAME;
+  This command is used only in the creation of SAVEPOINT among all the transactions.
+
+
+Q10. What is trigger and how to create a Trigger in SQL?
+
+=>A trigger is a stored procedure in a database that automatically invokes whenever a special event in the database occurs.  
+
+CREATE TRIGGER trigger_name
+{BEFORE | AFTER} {INSERT | UPDATE | DELETE}
+ON table_name
+FOR EACH ROW
+BEGIN
+    -- Trigger body (SQL statements)
+END;
