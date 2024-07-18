@@ -1,0 +1,12 @@
+# What are negative indexes and why are they used? 
+
+=> Retrieving the last element (using -1).
+=> Accessing elements in reverse order.
+=> Extracting a sliding window of elements from the end.
+
+
+# For example:
+
+=> my_list[-1] gives the last element.
+=> my_string[-3:] extracts a substring from the end of a string.
+=> Negative indexes make code concise and expressive!
