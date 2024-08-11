@@ -1,0 +1,23 @@
+Differentiate between append () and extend () methods? 
+
+1. append():
+
+=> Adds its argument as a single element to the end of the list.
+=> The length of the list increases by one.
+
+Example :-
+
+my_list = [1, 2, 3]
+my_list.append([4, 5])
+print(my_list)  # Output: [1, 2, 3, [4, 5]]
+
+2. extend():
+
+=> Iterates over its argument and adds each element to the list.
+=> The length of the list increases by however many elements were in the iterable.
+
+Example :-
+
+my_list = [1, 2, 3]
+my_list.extend([4, 5])
+print(my_list)  # Output: [1, 2, 3, 4, 5]
