@@ -7,8 +7,9 @@
    the class’s properties and behaviors.      '''
 
 
-'''Class: A blueprint or template that defines the structure and behavior of objects.
+'''
+Class: A blueprint or template that defines the structure and behavior of objects.
 
-Object (Instance): A specific realization of a class. It has its own unique data and can perform actions defined by the class.
+Object: A specific realization of a class. It has its own unique data and can perform actions defined by the class.
 
 Instantiation: The act of creating an object based on a class.      '''

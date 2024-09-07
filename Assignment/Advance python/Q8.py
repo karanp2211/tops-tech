@@ -2,5 +2,18 @@
 
 words = 'my name is karan panchal'
 
-longest_word = max(words.split(),key=len)
-print(longest_word)
+Text = words.split()
+longest_word = []
+lenght = 0
+
+for word in Text:
+        word_lenght = len(word)
+        if word_lenght > lenght:
+                longest_word = [word]
+
+                lenght = word_lenght
+
+        elif lenght == word_lenght:
+                longest_word.append(word)
+
+print(longest_word)                
