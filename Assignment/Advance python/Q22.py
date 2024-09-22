@@ -14,9 +14,9 @@ class my_self:
     def __init__(self, name):
         self.name = name
 
-my_dog = my_self(name="Karan")
+my_intro = my_self(name="Karan")
 
-print(f"My name is {my_dog.name}.")
+print(f"My name is {my_intro.name}.")
 
 '''
 Understanding self:

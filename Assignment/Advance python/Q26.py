@@ -9,33 +9,31 @@ Inheritance in Python :
 
 # Example : 
 
-class Animal:
+class child:
     def __init__(self, name):
         self.name = name
 
     def speak(self):
-        print(f"{self.name} makes a sound")
+        print(f"{self.name} a beautiful child.")
 
-class Dog(Animal):
+class parents(child):
     def speak(self):
-        print(f"{self.name} barks")
+        print(f"{self.name} has beautiful child.")
 
-# Creating instances
-my_animal = Animal(name="Generic Animal")
-my_dog = Dog(name="Buddy")
+my_child = child(name="This is")
+my_parents = parents(name="This parents")
 
-# Calling methods
-my_animal.speak()  
-my_dog.speak()    
+my_child.speak()  
+my_parents.speak()    
 
 
 '''
 init :
-
 Animal is the parent class with an __init__ method (constructor) that initializes the name attribute. '''
 
 
-'''Constructor : A constructor is a special method that is automatically called when an object of a class is created.
+'''
+Constructor : A constructor is a special method that is automatically called when an object of a class is created.
 
 => In Python, the constructor method is named __init__.
 => It initializes instance variables (attributes) for the object.
