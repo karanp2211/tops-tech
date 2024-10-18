@@ -11,7 +11,7 @@ elif role == "2":
     role = "Quiz Cracker"
 else:
     print("Invalid input. Please enter 1 or 2.")
-    exit()
+    exit()  
 
 def add_question():
     """Add a new question to the quiz."""
